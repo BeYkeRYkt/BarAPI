@@ -5,6 +5,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 import me.confuser.barapi.nms.FakeDragon;
+import me.confuser.barapi.nms.v1_5;
 import me.confuser.barapi.nms.v1_6;
 import me.confuser.barapi.nms.v1_7;
 
@@ -35,6 +36,10 @@ public class Util {
 		if (versions[0].equals("v1") && Integer.parseInt(versions[1]) > 6) {
 			newProtocol = true;
 			fakeDragonClass = v1_7.class;
+			
+		//Add new 1.5 (BeYkeRYkt)
+		}else if(versions[0].equals("v1") && Integer.parseInt(versions[1]) == 5){
+			fakeDragonClass = v1_5.class;
 		}
 
 		version = mcVersion + ".";

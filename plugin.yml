@@ -1,4 +1,4 @@
 main: me.confuser.barapi.BarAPI
-name: ${project.name}
-version: ${project.version}
-description: ${project.description}
+name: BarAPI
+version: 3.1
+description: BarAPI! + Add support 1.5.2 by BeYkeR
